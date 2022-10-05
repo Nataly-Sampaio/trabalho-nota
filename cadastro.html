@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro</title>
+</head>
+<body>
+	<h1>Contato</h1>
+
+	<p><a href="/trabalho-nota/index.html" target="_self">Home</a></p>
+	
+	<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
+
+	<tr>
+		<td align="center">
+
+			<form>
+				Nome:<br/>
+				<input type="text" name="nome"><br/>
+
+				Sexo:<br/>
+				<input type="radio" value="M" name="sexo">Masculino<br/>
+				<input type="radio" value="F" name="sexo">Femenino<br/>
+
+				Email:<br/>
+				<input type="email" name="email"><br/>
+
+				Estado:<br/>
+				<select name="estado">
+					<option value="" selected></option>
+					<option value="PI">PI</option>
+					<option value="MA">MA</option>
+					<option value="CE">CE</option>
+					<option value="SP">SP</option>
+				</select><br/>
+
+				Motivo do contato:<br/>
+				<textarea name="motivo"></textarea><br/>
+
+				Interesses:<br/>
+				<input type="checkbox" value="Economia" name="interesses">Econômia<br/>
+				<input type="checkbox" value="Praia" name="interesses">Praia<br/>
+				<input type="checkbox" value="Hotel" name="interesses">Hotel<br/>
+				<input type="checkbox" value="Pets" name="interesses">Pets<br/>
+				<input type="checkbox" value="Pousada" name="interesses">Pousada<br/>
+				<input type="checkbox" value="Entretenimento" name="interesses">Entretenimento<br/>
+
+		<br/>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Redefinir">
+	</tr>
+
+</body>
+</html>
